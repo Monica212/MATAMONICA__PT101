@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIXUE</title>
+    <style type="text/css">
+        /* Resetting some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body and general page settings */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #4f4f4f;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            color: #FF6347;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #2A3D4E;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav ul li {
+            display: inline;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        header nav ul li a:hover {
+            color: #FF6347;
+            transition: 0.3s ease;
+        }
+
+        /* Menu Section Styles */
+        #menu {
+            padding: 60px 10%;
+            background-color: #fff;
+        }
+
+        #menu h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            justify-items: center;
+        }
+
+        .menu-item {
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 15px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .menu-description {
+            padding: 20px;
+        }
+
+        .menu-description h3 {
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .menu-description p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #FF6347;
+        }
+
+        /* About Section Styles */
+        #about {
+            padding: 60px 10%;
+            background-color: #EFEFEF;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Contact Section Styles */
+        #contact {
+            padding: 60px 10%;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #contact p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        #contact a {
+            color: #FF6347;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #contact a:hover {
+            color: #2A3D4E;
+        }
+
+        /* Google Maps Section */
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #ffcc00;
+            color: #121212;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MIXUE</h1>
+        <img src="https://i.ibb.co/8LYMTwXC/FB-IMG-1741159016962.jpg" alt="MIXUE"
+        width="200" height="200">
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#location">Find Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+    <div class="menu-item">
+    <img src="https://i.ibb.co/TMP9jJzT/FB-IMG-1741163140331.jpg" alt="Bobba Sundae">
+    <div class="menu-description">
+    <h3>Bobba Sundae</h3>
+    <p>"Every sip and spoonful of a Bobba Sundae is a sweet escape from the ordinary, a delightful adventure for my taste buds!"
+    </p>
+    <div class="price"> Small ₱65</div>
+    <div class="price"> Large ₱95</div>
+    </div>
+    </div>
+    <div class="menu-item">
+    <img src="https://i.ibb.co/1Yz4gwDH/FB-IMG-1741163164575.jpg" alt="Lemon Tea">
+    <div class="menu-description">
+    <h3>Lemon Tea</h3>
+    <p>"Sipping lemon tea on a warm day is like a ray of sunshine in a cup!"
+    </p>
+    <div class="price"> Small ₱65</div>
+    <div class="price"> Large ₱95</div>
+    </div>
+    </div>
+    <div class="menu-item">
+    <img src="https://i.ibb.co/Y41sgsgc/FB-IMG-1741163181630.jpg" alt="Lemon Tea with ice cream">
+    <div class="menu-description">
+    <h3>Lemon Tea with Ice cream </h3>
+    <p>Sipping lemon tea with a scoop of creamy ice cream is like a symphony of flavors on my palate!
+    </p>
+    <div class="price"> Small₱65</div>
+    <div class="price"> Large ₱95</div>
+    </div>
+    </div>
+    <div class="menu-item">
+    <img src="https://i.ibb.co/WpvHKkft/FB-IMG-1741163150040.jpg" alt="Lemon tea with two toppings">
+    <div class="menu-description">
+    <h3>Lemon tea With two toppings</h3>
+    <p>Life is steeped in joy with a cup of tea, a splash of cream, and a spoonful of honey!
+    
+    </p>
+    <div class="price"> Small ₱65</div>
+    <div class="price"> Large ₱95</div>
+    </div>
+    </div>
+    <div class="menu-item">
+    <img src="https://i.ibb.co/XfXX3Dbp/FB-IMG-1741163147511.jpg" alt="Cookies and Cream">
+    <div class="menu-description">
+    <h3>Cookies and Cream </h3>
+    <p>Treat yourself to the perfect milk tea !
+    
+    </p>
+    <div class="price"> Small ₱65</div>
+    <div class="price"> Large ₱95</div>
+            <!-- Menu items here -->
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>"Indulging in a scoop of creamy ice cream paired with a soothing cup of tea is like wrapping yourself in a warm hug on a cold day, a comforting reminder that life's simple pleasures are often the most divine."!</p>
+    </section>
+
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align: center;">Have questions? Reach out to us:</p>
+    <p style="text-align: center;"><strong>Phone:</strong> 09914748597</p>
+    <p style="text-align: center;"><strong>Facebook:</strong> <a href="https://www.facebook.com/share/159BLNzPnt/" target="_blank" style="color: #ffcc00;">Mixue Alaminos City</a></p>
+    
+    </a>
+    </p>
+    
+    <section id=" Find us">
+    <h2>Location</h2>
+    <strong>Visit Us:</strong> 
+    <a href="https://www.google.com/maps/place/Mixue+Ice+Cream+%26+Tea+-+Nepo+Mart+Alaminos,+18+Sison+St,+Alaminos,+2404+Pangasinan/@16.1553093,119.9809266,17z/data=!4m6!3m5!1s0x3393dd0033b9607b:0x88fe7c548f701921!8m2!3d16.1553093!4d119.9809266!16s%2Fg%2F11vww7wg54" target="_blank" style="color: #ffcc00;">
+    Nepo Mall, Alaminos City, Pangasinan
+    </a>
+    </p>
+    </section>
+     <footer>
+        <p>&copy; 2025 Mixue.Alaminos. All Rights Reserved.</p>
+    </footer>
+    </body>
+</html>
